@@ -19,9 +19,9 @@ class ConsoleInterface
     END
 
     if @game.won?
-      puts 'Поздравляем, Вы выиграли!'
+      puts 'Поздравляем, Вы выиграли!'.colorize(:green)
     elsif @game.lost?
-      puts "Вы проиграли. Загаданное слово #{@game.word}"
+      puts "Вы проиграли. Загаданное слово #{@game.word}".colorize(:red)
     end
   end
 
@@ -47,7 +47,7 @@ class ConsoleInterface
   end
 
   def get_input
-    print 'Введите следующую букву:'
+    print 'Введите следующую букву:'.colorize(:blue)
     gets[0].upcase
   end
 end
