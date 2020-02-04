@@ -15,11 +15,11 @@
 Всего допустимо 7 ошибок. После этого игрок проиграет.
 
 ### Для запуска игры
-- Клонируте репозиторий
-`git clone git@github.com:fixel92/hangman.git`.
-- Перейдите в папку с программой.
-- Откройте терминал и выполните команды:`bundle install`(Подтянет зависимости), 
-`bundle exec ruby main.rb`(Запускает программу)
+```
+git clone git@github.com:fixel92/hangman.git
+bundle install
+bundle exec ruby main.rb
+```
 
 ### Зависимости
 - Ruby - версии не менее 1.9.2
